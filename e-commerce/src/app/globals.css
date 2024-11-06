@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* globals.css */
+
+/* Default Light Mode */
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Dark Mode */
+  .dark body {
+    background-color: #1a202c; /* Dark gray */
+    color: white;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Additional Styles for Dark Mode */
+  .dark .bg-white {
+    background-color: #2d3748; /* Darker gray for white backgrounds */
+  }
+  
+  .dark .text-gray-800 {
+    color: #e2e8f0; /* Light gray text color */
+  }
+  
+  /* Smooth transition for all elements */
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
